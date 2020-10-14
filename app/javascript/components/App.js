@@ -30,6 +30,10 @@ class App extends React.Component {
     .then((resp) => {
       if(resp.ok){
         return resp.json()
+        console.log("okay")
+      }
+      else{
+        console.log('error')
       }
     })
     .then((blogs) => {
